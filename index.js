@@ -6,3 +6,7 @@ function findMatching(drivers, who) {
 function fuzzyMatch(drivers, who) {
   return drivers.filter(function(driver) { return driver.startsWith(who) });
 }
+
+function matchName(drivers, who) {
+  return drivers.filter(function(driver) {return driver.name === who });
+}
