@@ -2,3 +2,7 @@
 function findMatching(drivers, who) {
   return drivers.filter(function(driver) { return driver.toLowerCase() === who.toLowerCase() });
 }
+
+function fuzzyMatch(drivers, who) {
+  return drivers.filter(function(driver) { return driver.startsWith(who) });
+}
